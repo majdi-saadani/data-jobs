@@ -4,14 +4,11 @@ import uuid
 from lib.communication_generator import sample_communication
 
 for _ in range(1000):
-	id = uuid.uuid4()
+    id = uuid.uuid4()
 
-	filename = f'./communications/communication-{id}.json'
-	os.makedirs(os.path.dirname(filename), exist_ok=True)
+    filename = f"./communications/communication-{id}.json"
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
 
-	with open(filename, 'w') as file:
-		com = sample_communication(id)
-		file.write(sample_communication(id))
-
-
-
+    with open(filename, "w") as file:
+        com = sample_communication(id)
+        file.write(sample_communication(id))
