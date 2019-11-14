@@ -1,0 +1,9 @@
+{
+    "id": "93d9f73c-6813-4cb3-a08c-fb627153f57e",
+    "telecom": "lifen",
+    "created_at": "2019-07-07 19:39:36",
+    "sender": {
+        "name": "Michel Durant",
+        "profession": "public_hospital"
+    }
+}

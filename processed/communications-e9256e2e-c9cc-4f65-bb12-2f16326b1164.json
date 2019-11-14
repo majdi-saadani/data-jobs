@@ -1,0 +1,9 @@
+{
+    "id": "e9256e2e-c9cc-4f65-bb12-2f16326b1164",
+    "telecom": "mail",
+    "created_at": "2019-07-31 16:12:25",
+    "sender": {
+        "name": "Herve Delatour",
+        "profession": "liberal"
+    }
+}

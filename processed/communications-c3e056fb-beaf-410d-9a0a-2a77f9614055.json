@@ -1,0 +1,9 @@
+{
+    "id": "c3e056fb-beaf-410d-9a0a-2a77f9614055",
+    "telecom": "mail",
+    "created_at": "2019-07-07 08:38:18",
+    "sender": {
+        "name": "Michel Durant",
+        "profession": "public_hospital"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "id": "032a6d37-e241-44d8-8115-b7cd217cdc00",
+    "telecom": "mail",
+    "created_at": "2019-07-24 23:23:41",
+    "sender": {
+        "name": "Vincent Martinez",
+        "profession": "private_hospital"
+    }
+}

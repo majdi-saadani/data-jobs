@@ -1,6 +1,6 @@
 from pprint import pprint
 
-from DataChanllenge import DataChallengeHandler
+from DataChallenge import DataChallengeHandler
 
 data_challenge_handler = DataChallengeHandler()
 
