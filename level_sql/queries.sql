@@ -1,17 +1,18 @@
 - Demateralization rate (= number of papered communication / total number of communication) for each `liberal` doctors
  ------
 Requete sur MySQL :
-SELECT COUNT(id) / total_communication.total_com  AS Demateralization_rate,
-       lifen.sender_name
-FROM lifen AS lifen
-LEFT JOIN (select COUNT(id) as total_com ,
-                  sender_name
-           FROM lifen WHERE sender_category = 'liberal'
-           GROUP BY sender_name  ) AS  total_communication
-ON total_communication.sender_name = lifen.sender_name
-WHERE telecom = 'paper'
-AND sender_category = 'liberal'
-GROUP by sender_name
+        SELECT (COUNT(id) / total_communication.total_com)  AS Demateralization_rate,
+               lifen.sender_name
+          FROM lifen AS lifen
+     LEFT JOIN (SELECT COUNT(id) AS total_com ,
+                       sender_name
+                  FROM lifen
+                 WHERE sender_category = 'liberal'
+              GROUP BY sender_name ) AS  total_communication
+            ON total_communication.sender_name = lifen.sender_name
+         WHERE telecom = 'paper'
+           AND sender_category = 'liberal'
+      GROUP BY sender_name
 --------------------
 
 - Doctors list that have sent at least 5 communications during the 7 days following their first communication.
